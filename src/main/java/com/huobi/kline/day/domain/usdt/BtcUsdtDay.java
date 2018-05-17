@@ -14,7 +14,7 @@ import java.math.BigDecimal;
  **/
 @Data
 @Entity
-@Table(name = "btcusdt2_day")
+@Table(name = "btcusdt_day")
 public class BtcUsdtDay {
     @Id
     private Long id;

@@ -804,7 +804,12 @@ public class DayKlineService {
 
 private String getJson(String symbol) {
         try {
-            String url2 = HUOBI_KLINE_URL + "?symbol=" + symbol + "&period=1day&size=60";
+//            String url = HUOBI_BR_KLINE_URL + "?symbol=" + symbol + "&period=1day&size=1000";
+//            String json = HttpUtils.sendGet(url, false);
+//            if (json !=null && !json.isEmpty()){
+//                return json;
+//            }
+            String url2 = HUOBI_KLINE_URL + "?symbol=" + symbol + "&period=1day&size=1000";
             String json = HttpUtils.sendGet(url2, true);
             if (json != null && !json.isEmpty()) {
                 return json;
